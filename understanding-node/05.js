@@ -6,22 +6,22 @@ var http = require('http')
 
 http.createServer(function (req, resp) {
   var p = path.join(__dirname, req.url);
-  if (req.method == 'PUT') {
-    setTimeout(function () {
-      var s = fs.createWriteStream(p);
-      req.pipe(s);
-      s.on('end', function () {
-        console.log('write end');
-        resp.writeHead(201); resp.end();
-      })
-    }, 1 * 1000)
-    req.on('end', function () { console.log('request end'); })
+  if (req.method === 'GET') {
+    resp.writeHead(200);
+    fs.createReadStream(p).pipe(resp);
+  } else if (req.method == 'PUT') {
+    var s = fs.createWriteStream(p);
+    req.pipe(s);
+    s.on('end', function () {
+      resp.writeHead(201);
+      resp.end();
+    })
   }
 }).listen(8888)
 
-var notes = fs.createReadStream(path.join(__dirname, 'notes.txt'));
-notes.pipe(request.put('http://localhost:8888/newfile-2.txt'));
-
-notes.on('end', function () {
-  console.log('read end')
+request('http://localhost:8888/hello.txt', function (e, resp, body) {
+  console.log(body);
 })
+
+var notes = fs.createReadStream(path.join(__dirname, 'notes.txt'))
+notes.pipe(request.put('http://localhost:8888/newfile.txt'))

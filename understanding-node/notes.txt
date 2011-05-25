@@ -14,6 +14,17 @@ Callbacks
 - IO
 - event loop
 - before/after nextTick()
+- stack traces
+
+01.js - 04.js
+
+
+
+
+
+
+
+
 
 
 
@@ -44,7 +55,7 @@ EventEmitter
 - blocks on processing
 - happens in one eventsys call
 
-
+05.js - 08.js
 
 
 
