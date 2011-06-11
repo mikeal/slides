@@ -13,7 +13,7 @@
 
 
 
-Spider
+spider
 @mikeal
 
 
@@ -29,6 +29,10 @@ Spider
 
 
 
+- The already Open Web
+- .gov .edu data
+- open APIs and open data
+- paywall
 
 
 
@@ -41,7 +45,19 @@ Spider
 
 
 
-- code sharing
+
+
+
+
+
+
+
+
+
+
+
+
+- code sharing (pfft!)
 - good ideas should be portable
 
 
