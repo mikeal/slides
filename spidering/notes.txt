@@ -31,8 +31,9 @@ spider
 
 - The already Open Web
 - .gov .edu data
+- max ogden
 - open APIs and open data
-- paywall
+- paywalls
 
 
 
@@ -57,6 +58,8 @@ spider
 
 
 
+
+- node.js
 - code sharing (pfft!)
 - good ideas should be portable
 
@@ -93,6 +96,7 @@ spider
 
 - routes
 - 1.js
+- 2.js
 
 
 
@@ -129,7 +133,6 @@ spider
 
 
 - inspection tools & route & $.spider
-- 2.js
 - 3.js
 
 

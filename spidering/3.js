@@ -4,10 +4,6 @@ var s = spider()
 
 s.route('2011.texasjavascript.com', '/', function (window, $) {
   
-  $('a').each(function () {
-    console.log(this.getAttribute('href'))
-  })
-  
   $('a').spider()
   
 })
