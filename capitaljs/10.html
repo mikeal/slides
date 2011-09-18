@@ -1,0 +1,9 @@
+<script src="/socket.io/socket.io.js"></script>
+<div id="blah"></div>
+<script>
+  var socket = io.connect('http://localhost:1337');
+  socket.on('data', function (data) {
+    console.log(data);
+    document.getElementById("blah").textContent += data
+  });
+</script>
