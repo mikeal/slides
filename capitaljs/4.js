@@ -2,7 +2,7 @@ var argv = require('optimist')
            .usage('Count the lines in a file.\nUsage: $0')
            .demand('f')
            .alias('f', 'file')
-           .describe('f', 'Load a file')
+           .describe('f', 'File to load.')
            .argv
            ;
 

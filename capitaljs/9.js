@@ -3,7 +3,5 @@ var http = require('http')
   ;
 
 http.createServer(function (req, resp) {
-  var x = request('http://www.google.com' + req.url)
-  req.pipe(x)
-  x.pipe(resp)
+  req.pipe(request('http://www.google.com' + req.url)).pipe(resp)
 }).listen(1337)

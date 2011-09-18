@@ -101,9 +101,9 @@ Bestest package manager in the WORLD!
 
 Between 10 and 30 new packages a day and between 100 and 200 updates to existing packages.
 
-http://search.npmjs.org/#/_analytics
-
 Goodies
+
+$ npm install express
 
 $ npm explore request
 
@@ -113,8 +113,7 @@ $ npm config set viewer browser
 
 $ npm list
 
-
-
+http://search.npmjs.org/
 
 
 
